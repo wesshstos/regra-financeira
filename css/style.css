@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+:root {
+  /* colors */
+  --header-footer: #1c1c1c;
+  --linear-color-1: #bebebe;
+  --linear-color-2: #3a3a3a;
+  --color-card: #605f5f;
+  --color-body: #eeeeee;
+  --color-btns: #363645;
+  --hover-btns: #43435f;
+  --color-btn-gg: #384536;
+  --hover-btn-gg: #476642;
+  /* text */
+  --text-body: 1rem;
+  --span-valor: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: var(--text-body);
+  font-family: "Lato", sans-serif;
+  color: var(--color-body);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--linear-color-1);
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background: var(--header-footer);
+  padding: 1.2rem;
+}
+
+header h1 {
+  color: var(--text-body);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in-out;
+}
+
+.card-left {
+  max-width: 500px;
+  height: auto;
+  padding: 50px;
+  border-radius: 12px;
+  background: var(--color-card);
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.regraValor {
+  margin: 0 0 20px 0;
+  font-weight: 900;
+}
+
+.input-btn {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-btn input {
+  padding: 12px;
+  width: 100%;
+  color: #111111;
+  margin: 0 10px 0 0;
+  font-size: var(--text-body);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+.input-btn button {
+  margin: 10px 0 0 0 ;
+  width: 90%;
+  padding: 12px 30px;
+  background: var(--color-btns);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+.modo-uso h4,
+.sobre-regra h4 {
+  font-weight: 900;
+  margin: 0 0 10px 0;
+}
+
+.modo-uso ol li {
+  margin: 0 0 5px 20px;
+  text-align: justify;
+}
+
+.sobre-regra {
+  width: 100%;
+}
+
+.sobre-regra p {
+  text-align: justify;
+  text-indent: 1cm;
+  margin: 0 0 20px 0;
+}
+
+.sobre-regra a {
+  width: 100%;
+  background: var(--color-btns);
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.input-btn button:hover,
+.sobre-regra a:hover {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  background: var(--hover-btns);
+}
+
+hr {
+  border: 0.5px #ffffff30 groove;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.card-right {
+  max-width: 500px;
+  height: auto;
+  padding: 50px;
+  border-radius: 12px;
+  background: var(--color-card);
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.4s ease-in-out;
+}
+
+.despesas {
+  width: 100%;
+}
+
+.despesas h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+}
+
+.despesas span {
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+}
+
+.despesas p {
+  margin: 10px 0 0 0;
+  font-size: 0.8rem;
+  text-align: justify;
+  text-indent: 1.25cm;
+}
+
+.area-btn {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-btn button {
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.btn-limpar {
+  background: var(--color-btns);
+}
+
+.btn-limpar:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background: var(--hover-btns);
+}
+
+@media (min-width: 300px) and (max-width: 1023px) {
+  body {
+    height: auto;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  main {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .card-left,
+  .card-right {
+    max-width: 400px;
+    padding: 20px;
+    align-items: center;
+    margin: 0 0 30px 0;
+  }
+
+  .regraValor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .input-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .input-btn input,
+  .input-btn button {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+
+  .modo-uso,
+  .sobre-regra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sobre-regra a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .card-left,
+  .card-right {
+    max-width: 450px;
+  }
+}

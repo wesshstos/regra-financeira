@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Regra Financeira 50/30/20</title>
+     <script src="https://kit.fontawesome.com/9b9d836f4e.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <header>
+          <h1>Regra Financeira 50/30/20</h1>
+     </header>
+
+     <main>
+          <section class="card-left">
+               <div class="regraValor">
+                    <label id="labelInput" for="dinheiro">Valor Bruto Mensal</label>
+                    <div class="input-btn">
+                         <input type="text" minlength="2" maxlength="4" id="dinheiro" name="dinheiro">
+                         <button id="btnConsultar">Consultar <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+               </div>
+               <hr>
+               <div class="modo-uso">
+                    <h4>Modo de Uso</h4>
+                    <ol>
+                         <li>O valor a ser inserido deve ser de toda sua renda mensal, some o valor e coloque no campo
+                              para obter as informações;</li>
+                         <li>Evite colocar centavos.</li>
+                    </ol>
+               </div>
+               <hr>
+               <div class="sobre-regra">
+                    <h4>Sobre a Regra</h4>
+                    <p>O método 50-30-20 consiste em dividir a sua renda líquida mensal em três partes (50%, 30% e 20%),
+                         considerando as despesas fixas, despesas variáveis e o dinheiro que você irá poupar. O
+                         principal objetivo é que você consiga equilibrar as suas entradas e saídas e poupar dinheiro,
+                         entendendo qual será o destino do seu dinheiro.</p>
+                    <a target="_blank"
+                         href="https://economia.uol.com.br/mais/pagbank/2021/10/14/regra-50-30-20-aprenda-um-metodo-para-conseguir-economizar-hoje.htm">Saiba
+                         Mais</a>
+               </div>
+          </section>
+          <section class="card-right" id="cardResponse">
+               <div class="despesas">
+                    <h4>Despesas Fixas</h4>
+                    <span id="despesasFixas"></span>
+                    <p>
+                         Inclui moradia (aluguel, contas de água, luz, telefone, internet, condomínio, gás), alimentação
+                         básica, transporte, seguros, saúde, higiene, impostos.
+                    </p>
+               </div>
+               <hr>
+               <div class="despesas">
+                    <h4>Despesas Variáveis</h4>
+                    <span id="despesasVariaveis"></span>
+                    <p>
+                         Tudo aquilo que não for considerado essencial para sua sobrevivência, pode ser classificado
+                         como gasto dispensável ou variável, como TV por assinatura, lazer, mimos cotidianos, entre
+                         outros.
+                    </p>
+               </div>
+               <hr>
+               <div class="despesas">
+                    <h4>Reserva Financeira</h4>
+                    <span id="reservaFinanceira"></span>
+                    <p>
+                         Esse é o dinheiro que você irá investir nos seus projetos ou que irá garantir tranquilidade. Se
+                         tiver dívidas antigas ou acordos, esse percentual poderá ser utilizado para quitá-las. Assim
+                         que quitadas, utilize esse percentual para investir nos projetos.
+                    </p>
+               </div>
+
+               <div class="area-btn">
+                    <button id="btnLimpar" class="btn-limpar">Limpar</button>
+               </div>
+          </section>
+     </main>
+
+     <script src="javascript/script.js" type="text/javascript"></script>
+</body>
+
+</html>
