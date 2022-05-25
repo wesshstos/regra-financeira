@@ -3,7 +3,7 @@
 </h1>
 
 <p>
-     Este projeto fazer o calculo da Regra Financeira 50-30-20, onde o usuário saberá qual seu rendimento mensal devido o seu salario no mês.
+     Este projeto faz o cálculo da Regra Financeira 50-30-20, onde o usuário saberá qual seu rendimento mensal devido o seu salário no mês.
 </p>
 <br>
 <h2 align="center">
@@ -30,9 +30,11 @@
 <h1 id="modoUso">Modo de Uso</h1>
 
 <ul>
-     <li>Preencha o campo de valor Bruto Mensal, use o valor do seu rendimento mensal para fazer o calculo.</li>
+     <li>
+          Preencha o campo de valor Bruto Mensal, use o valor do seu rendimento mensal para fazer o cálculo.
+     </li>
      <img style="width: 500px; margin-bottom: 20px;" src="./github/exempleOne.gif" title="Readme" alt="Readme">
-     <li>Clique no botão consultar e ira abrir um card do lado direito</li>
+     <li>Clique no botão consultar e irá abrir um card do lado direito</li>
      <img style="margin-bottom: 20px;" src="./github/exampleTwo.gif" title="Readme" alt="Readme">
      <li>Caso queira fazer uma nova consulta, clique em Limpar</li>
      <img style="margin-bottom: 20px;" src="./github/exampleThree.gif" title="Readme" alt="Readme">
@@ -46,14 +48,14 @@
      </li>
      <img style="margin-bottom: 20px;" src="./github/errorOne.gif" alt="Readme" title="Readme">
      <li>
-          Coloque valores a partir do terceiro digito, o limite do campo é 8. Evite usar valores com centavos use somente numeros inteiros para fazer a consultas
+          Coloque valores a partir do terceiro dígito, o limite do campo é 8. Evite usar valores com centavos use somente números inteiros para fazer a consultas
      </li>
      <img style="margin-bottom: 20px;" src="./github/errorTwo.gif" alt="Readme" title="Readme">
 </ul>
 
 <h1 id="reponsive">Responsividade</h1>
 <p>
-     A responsividade deste projeto consiste em Tamanho para dispositivos Moveis, Tablet e Navegadores Desktop.
+     A responsividade deste projeto consiste em Tamanho para dispositivos Móveis, Tablet e Navegadores Desktop.
 </p>
 <br>
 <div>
