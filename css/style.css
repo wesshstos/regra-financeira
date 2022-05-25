@@ -25,6 +25,9 @@
   font-family: "Lato", sans-serif;
   color: var(--color-body);
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100vw;
@@ -67,36 +70,37 @@ main {
 }
 
 .regraValor {
-  margin: 0 0 20px 0;
   font-weight: 900;
 }
 
 .input-btn {
-  margin: 10px 0 0 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .input-btn input {
-  padding: 12px;
   width: 100%;
+  padding: 12px;
   color: #111111;
-  margin: 0 10px 0 0;
   font-size: var(--text-body);
-  border: none;
+  border: 1px solid var(--hover-btns);
   outline: none;
   border-radius: 6px;
+  margin: 10px 0 0 0;
 }
 
 .input-btn button {
-  margin: 10px 0 0 0 ;
-  width: 90%;
-  padding: 12px 30px;
+  width: 100%;
+  padding: 12px 20px;
   background: var(--color-btns);
   border: none;
   outline: none;
   border-radius: 6px;
+  margin: 10px 0 0 0;
 }
 
 .modo-uso h4,
@@ -120,15 +124,19 @@ main {
   margin: 0 0 20px 0;
 }
 
-.sobre-regra a {
-  width: 100%;
+.sobre-regra button {
+  border: none;
+  outline: none;
+
   background: var(--color-btns);
-  padding: 10px 30px;
-  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .input-btn button:hover,
-.sobre-regra a:hover {
+.sobre-regra button:hover {
   transition: 0.3s ease-in-out;
   cursor: pointer;
   background: var(--hover-btns);
@@ -157,25 +165,32 @@ hr {
   width: 100%;
 }
 
-.despesas h4 {
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 1.1rem;
-  margin: 0 0 10px 0;
-}
-
-.despesas span {
-  font-weight: 900;
-  font-size: 1.1rem;
-  letter-spacing: 1.2px;
-}
-
 .despesas p {
   margin: 10px 0 0 0;
   font-size: 0.8rem;
   text-align: justify;
   text-indent: 1.25cm;
+}
+
+.tituloDespesa {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 11px 0;
+}
+
+.tituloDespesa h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.tituloDespesa span {
+  font-weight: 900;
+  font-size: 1.1rem;
 }
 
 .area-btn {
@@ -194,6 +209,7 @@ hr {
 }
 
 .btn-limpar {
+  width: 100%;
   background: var(--color-btns);
 }
 
@@ -203,7 +219,10 @@ hr {
   background: var(--hover-btns);
 }
 
-@media (min-width: 300px) and (max-width: 1023px) {
+@media (min-width: 300px) and (max-width: 959px) {
+  html {
+    font-size: .8rem;
+  }  
   body {
     height: auto;
   }
@@ -230,23 +249,26 @@ hr {
   }
 
   .regraValor {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
   }
 
   .input-btn {
+    padding: 10px 0;
+    margin: 0 auto;
+    height: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .input-btn input,
   .input-btn button {
+    margin: 0 0 10px 0;
     width: 100%;
-    margin: 10px 0 0 0;
   }
 
   .modo-uso,
@@ -257,15 +279,21 @@ hr {
     justify-content: center;
   }
 
-  .sobre-regra a {
+  .sobre-regra button {
     width: 100%;
-    text-align: center;
+    padding: 10px 0;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 960px) and (max-width: 1440px) {
   .card-left,
   .card-right {
     max-width: 450px;
+  }
+
+  .input-btn input, .input-btn button{
+    width: auto;
+    justify-content: space-around;
+    margin: auto;
   }
 }

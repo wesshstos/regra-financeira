@@ -7,8 +7,13 @@ let despesasFixas = document.querySelector('#despesasFixas')
 let despesasVariaveis = document.querySelector('#despesasVariaveis')
 let reservaFinanceira = document.querySelector('#reservaFinanceira')
 let labelInput = document.querySelector('#labelInput')
+let aviso = document.querySelector('#aviso')
 
-btnLimpar.addEventListener('click', (e) =>{
+function sobreRegra(){
+     window.open('https://economia.uol.com.br/mais/pagbank/2021/10/14/regra-50-30-20-aprenda-um-metodo-para-conseguir-economizar-hoje.htm')
+}
+
+btnLimpar.addEventListener('click', (e) => {
      e.preventDefault()
 
      let dinheiro = document.querySelector('#dinheiro')
@@ -25,16 +30,16 @@ btnLimpar.addEventListener('click', (e) =>{
      cardRight.style.display = 'none'
 })
 
-dinheiro.addEventListener('keyup', function(e){
+dinheiro.addEventListener('keyup', function (e) {
      e.preventDefault()
 
      if (dinheiro.value.length === 0 || dinheiro.value.length <= 2) {
           dinheiro.setAttribute('style', 'border: 2px solid #f00')
-          labelInput.innerHTML = 'Valor Bruto Mensal *Insira um valor de 100 até 9999'
-          labelInput.setAttribute('style', 'color: #f00')  
+          aviso.innerHTML = 'Insira um valor de 100 até 9999'
+          aviso.setAttribute('style', 'color: #f00; font-size: .8rem; margin: 10px 0 0 0')
      } else {
-          labelInput.removeAttribute('style', 'color: #f00')
-          labelInput.innerHTML = 'Valor Bruto Mensal'
+
+          aviso.innerHTML = ''
           dinheiro.removeAttribute('style', 'border: 2px solid #f00')
      }
 })
@@ -45,8 +50,8 @@ btnConsultar.addEventListener('click', function (e) {
      let dinheiro = document.querySelector('#dinheiro').value
 
      if (dinheiro === '' || dinheiro.length <= 2) {
-          labelInput.innerHTML = 'Valor Bruto Mensal *Preencha este campo'
-          labelInput.setAttribute('style', 'color: #f00')
+          aviso.innerHTML = 'Preencha este campo'
+          aviso.setAttribute('style', 'color: #f00; margin: 10px 0 0 0')
      } else {
 
           let valorSalario = parseFloat(dinheiro).toFixed(2)
@@ -59,7 +64,6 @@ btnConsultar.addEventListener('click', function (e) {
 
           window.scrollTo(0, 789)
           labelInput.removeAttribute('style', 'color: #f00')
-          labelInput.innerHTML = 'Valor Bruto Mensal'
 
           main.style.justifyContent = 'space-around'
           cardRight.style.display = 'flex'

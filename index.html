@@ -23,6 +23,7 @@
                          <input type="text" minlength="2" maxlength="4" id="dinheiro" name="dinheiro">
                          <button id="btnConsultar">Consultar <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
+                    <span id="aviso"></span>
                </div>
                <hr>
                <div class="modo-uso">
@@ -36,19 +37,23 @@
                <hr>
                <div class="sobre-regra">
                     <h4>Sobre a Regra</h4>
-                    <p>O método 50-30-20 consiste em dividir a sua renda líquida mensal em três partes (50%, 30% e 20%),
+                    <p>
+                         O método 50-30-20 consiste em dividir a sua renda líquida mensal em três partes (50%, 30% e 20%),
                          considerando as despesas fixas, despesas variáveis e o dinheiro que você irá poupar. O
                          principal objetivo é que você consiga equilibrar as suas entradas e saídas e poupar dinheiro,
-                         entendendo qual será o destino do seu dinheiro.</p>
-                    <a target="_blank"
-                         href="https://economia.uol.com.br/mais/pagbank/2021/10/14/regra-50-30-20-aprenda-um-metodo-para-conseguir-economizar-hoje.htm">Saiba
-                         Mais</a>
+                         entendendo qual será o destino do seu dinheiro.
+                    </p>
+
+                    <button onclick="sobreRegra()">Saiba Mais</button>
+               
                </div>
           </section>
           <section class="card-right" id="cardResponse">
                <div class="despesas">
-                    <h4>Despesas Fixas</h4>
-                    <span id="despesasFixas"></span>
+                    <div class="tituloDespesa">
+                         <h4>Despesas Fixas</h4>
+                         <span id="despesasFixas"></span>
+                    </div>
                     <p>
                          Inclui moradia (aluguel, contas de água, luz, telefone, internet, condomínio, gás), alimentação
                          básica, transporte, seguros, saúde, higiene, impostos.
@@ -56,8 +61,10 @@
                </div>
                <hr>
                <div class="despesas">
-                    <h4>Despesas Variáveis</h4>
-                    <span id="despesasVariaveis"></span>
+                    <div class="tituloDespesa">
+                         <h4>Despesas Variáveis</h4>
+                         <span id="despesasVariaveis"></span>
+                    </div>
                     <p>
                          Tudo aquilo que não for considerado essencial para sua sobrevivência, pode ser classificado
                          como gasto dispensável ou variável, como TV por assinatura, lazer, mimos cotidianos, entre
@@ -66,8 +73,10 @@
                </div>
                <hr>
                <div class="despesas">
-                    <h4>Reserva Financeira</h4>
-                    <span id="reservaFinanceira"></span>
+                    <div class="tituloDespesa">
+                         <h4>Reserva Financeira</h4>
+                         <span id="reservaFinanceira"></span>
+                    </div>
                     <p>
                          Esse é o dinheiro que você irá investir nos seus projetos ou que irá garantir tranquilidade. Se
                          tiver dívidas antigas ou acordos, esse percentual poderá ser utilizado para quitá-las. Assim
